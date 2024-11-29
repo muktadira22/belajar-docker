@@ -1,0 +1,17 @@
+firstname: Muhammad
+middleName: Aria
+lastName: Muktadir
+hobbies:
+  - coding
+  - reading
+  - playing games
+address:
+  street: Jl. Kebon Jeruk
+  city: Cianjur
+  province: Jawa Barat
+  country: Indonesia
+wallet:
+  - type: cash
+    amount: 1000000
+  - type: debit
+    amount: 5000000
