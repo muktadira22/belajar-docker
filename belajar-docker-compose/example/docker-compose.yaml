@@ -1,3 +1,5 @@
+name: project-example
+
 services:
   nginx-example:
     container_name: nginx-example
