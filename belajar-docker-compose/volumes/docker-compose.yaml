@@ -1,0 +1,30 @@
+name: docker-compose-volumes
+
+services:
+  mysql-example-1:
+    image: mysql:8.4.3
+    container_name: mysql-example-1
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: admin
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - "3380:3306"
+    volumes:
+      - "./mysql-data-1:/var/lib/mysql"
+  mysql-example-2:
+    image: mysql:8.4.3
+    container_name: mysql-example-2
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: admin
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - "3381:3306"
+    volumes:
+      - type: bind
+        source: "./mysql-data-2"
+        target: "/var/lib/mysql"
+        read_only: false
