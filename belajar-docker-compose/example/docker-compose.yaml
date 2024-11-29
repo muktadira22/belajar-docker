@@ -1,0 +1,14 @@
+services:
+  nginx-example:
+    container_name: nginx-example
+    image: nginx:latest
+  nginx-example-2:
+    container_name: nginx-example-2
+    image: nginx:latest
+  nginx-example-3:
+    container_name: nginx-example-3
+    image: nginx:latest
+  redis-local:
+    container_name: redis-local
+    image: redis
+    
