@@ -1,0 +1,6 @@
+name: docker-compose-yaml
+
+networks:
+  network_example:
+    name: network-example
+    driver: bridge
