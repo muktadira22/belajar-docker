@@ -1,9 +1,12 @@
 name: "docker-compose-services"
 
 services:
+  # This is example nginx service
   nginx-example:
     image: nginx:latest
     container_name: nginx-example
+
+  # this is example mongodb service
   mongodb-example:
     image: mongo:latest
     container_name: mongodb-example
